@@ -1,6 +1,9 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeBackdrop } from "@/components/theme/ThemeBackdrop";
+import { ThemeSwitcher } from "@/components/theme/ThemeSwitcher";
 
 function NotFoundComponent() {
   return (
@@ -68,5 +71,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <ThemeProvider>
+      <ThemeBackdrop />
+      <Outlet />
+      <ThemeSwitcher />
+    </ThemeProvider>
+  );
 }
