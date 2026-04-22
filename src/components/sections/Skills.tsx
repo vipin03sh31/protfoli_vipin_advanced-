@@ -35,7 +35,7 @@ const SKILLS: Skill[] = [
   { name: "Tailwind",   Icon: SiTailwindcss,  color: "#38BDF8", size: 1.08, delay: 1.0, duration: 6.5, depth: 0.65 },
   { name: "Git",        Icon: SiGit,          color: "#F05032", size: 1.05, delay: 1.5, duration: 7.0, depth: 0.6 },
   { name: "HTML",       Icon: SiHtml5,        color: "#E34F26", size: 0.95, delay: 0.7, duration: 6.8, depth: 0.45 },
-  { name: "CSS",        Icon: SiCss,          color: "#1572B6", size: 0.95, delay: 1.3, duration: 7.2, depth: 0.45 },
+  { name: "CSS",        Icon: SiCss,          color: "#1572B6", size: 0.95, delay: 1.3, duration: 7.2, depth: 0.45 }, // css3,
   { name: "VLSI",       Icon: FaMicrochip,    color: "#A78BFA", size: 1.05, delay: 0.1, duration: 6.6, depth: 0.7 },
   { name: "AI / ANN",   Icon: FaBrain,        color: "#F472B6", size: 1.12, delay: 1.8, duration: 6.3, depth: 0.8 },
 ];
