@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import {
   SiReact, SiNextdotjs, SiNodedotjs, SiPython, SiJavascript, SiCplusplus,
   SiFastapi, SiExpress, SiMongodb, SiMysql, SiRedis, SiSqlite,
-  SiTailwindcss, SiGit, SiTypescript, SiHtml5, SiCss3,
+  SiTailwindcss, SiGit, SiTypescript, SiHtml5, SiCss,
 } from "react-icons/si";
 import { FaBrain, FaMicrochip } from "react-icons/fa";
 import type { IconType } from "react-icons";
