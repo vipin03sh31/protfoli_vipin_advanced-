@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { SkillsLayers } from "../three/SkillsLayers";
+import { SkillsPyramid } from "../three/SkillsPyramid";
 
 function useIsMobile() {
   const [m, setM] = useState(false);
@@ -37,10 +37,10 @@ export function Skills() {
             02 / Stack
           </span>
           <h2 className="text-balance text-5xl font-bold tracking-tight md:text-7xl">
-            Layered <span className="text-gradient">depth</span> of craft.
+            A <span className="text-gradient">pyramid</span> of craft.
           </h2>
           <p className="mt-2 max-w-2xl text-foreground/60">
-            Scroll to fly through the layers. Move your mouse to tilt the world.
+            Hover a layer to highlight it. Click to reveal the stack inside.
           </p>
         </motion.div>
 
@@ -54,16 +54,16 @@ export function Skills() {
           }}
         >
           {!isMobile ? (
-            <SkillsLayers />
+            <SkillsPyramid />
           ) : (
             <MobileFallback />
           )}
 
-          {/* Top scrim + scroll hint */}
+          {/* Top scrim + hint */}
           <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/60 to-transparent" />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="pointer-events-none absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-[0.3em] text-white/50">
-            scroll inside ↕ · move mouse to tilt
+            hover a layer · click to reveal skills
           </div>
         </div>
       </div>
